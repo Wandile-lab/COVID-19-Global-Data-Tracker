@@ -6,7 +6,6 @@ import plotly.express as px
 
 df = pd.read_csv("owid-covid-data.csv")
 
-# Filter for selected African countries
 countries_of_interest = ['South Africa', 'Kenya', 'Nigeria', 'Zimbabwe']
 df_filtered = df[df['location'].isin(countries_of_interest)].copy()
 
